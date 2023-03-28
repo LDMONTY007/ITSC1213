@@ -1,0 +1,112 @@
+import java.util.ArrayList;
+
+public class Student extends Person implements Comparable<Student>{
+    private String major;
+    private double gpa;
+    private int credits;
+    private double balance;
+    private boolean transfer;
+    private ArrayList<String> enrolledCourses;
+
+    public Student(String f, String l, int id, String major, double gpa, int credits)
+    {
+        super(f, l, id);
+        this.major = major;
+        this.gpa = gpa;
+        this.credits = credits;
+        balance = 0;
+        enrolledCourses = new ArrayList<>();
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
+
+    public int getCredits() {
+        return credits;
+    }
+
+    public boolean isTransfer() {
+        return transfer;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public ArrayList<String> getEnrolledCourses() {
+        return enrolledCourses;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
+
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
+
+    public void setTransfer(boolean transfer) {
+        this.transfer = transfer;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void addCourse(String c)
+    {
+        enrolledCourses.add(c);
+    }
+
+    public boolean dropCourse(String c)
+    {
+        if (enrolledCourses.contains(c))
+        {
+            enrolledCourses.remove(c);
+            return true;
+        }
+        else
+        return false;
+    }
+
+    //Module 7 - Part A
+    @Override
+    public void display() {
+        System.out.println("Name: " + this.getFirstName() + " " + this.getLastName() + "\nID: " + this.getId() + "\tMajor: " + major + "\nGPA: " + gpa + "\tCredits Applied: " + credits + "\nClasses: ");
+        for (String s : enrolledCourses) {
+            System.out.println("\t" + s);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Student - " + this.getFirstName() + " " + this.getLastName();
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        System.out.println("Students GPA: " + this.getGpa() + " and " + o.getGpa());
+        if (this.getGpa() == o.getGpa())
+        {
+            return 0;
+        }
+        else if (this.getGpa() > o.getGpa())
+        {
+            return 1;
+        }
+        else if (this.getGpa() < o.getGpa())
+        {
+            return -1;
+        }
+        return 0;
+    }
+}

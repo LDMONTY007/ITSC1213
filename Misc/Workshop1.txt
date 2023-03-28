@@ -1,0 +1,12 @@
+What is the name of the class? : Car
+Name (list) four properties for this object. 
+1. public String Model (name)
+2. public int year 
+3. private String color
+4. private String gear
+
+Name (list) four actions you want this object to be able to perform. 
+1. SetGear(String gear), sets the current gear
+2. GetGear(), returns current gear
+3. SetColor(String color), sets current color
+4. GetColor(), gets current color
