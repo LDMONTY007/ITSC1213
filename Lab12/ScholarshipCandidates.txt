@@ -1,0 +1,14 @@
+***************************************************
+Our top candidates for the scholarship are: 
+***************************************************
+Kathrine Johnson 900 CS 4.0 100
+Xavier Cato 900111222 CS 3.5 75
+***************************************************
+Our middle candidates for the scholarship are: 
+***************************************************
+Grace Maxeem 903 Psychology 3.4 95
+Roy Clay 901 Biology 3.2 85
+***************************************************
+Our ineligible candidates for the scholarship are: 
+***************************************************
+Kimberly Bryant 902 Electrical Engineering 3.0 80

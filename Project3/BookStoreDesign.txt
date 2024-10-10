@@ -1,0 +1,20 @@
+Here are all of my "Functions" from the store menu.
+0. Exit Menu
+1. Make Purchase
+    This will prompt the user to select a product from a menu which will be added to their cart,
+    which can later be fully purchased (as in it's price is added to the current member's overall total)
+    in the checkout "Function".
+2. Upgrade to Premium member
+    Upgrades the current member to a premium member and adds the premium member fee to their currentProducts
+    list which will be payed for when they check out.
+3. Checkout
+    This processes all the items in the current member's cart, gets their total and adds it to the overall member 
+    member total then clears the members cart. 
+4. Switch to different member
+    Switches current member to be a different member of the user's choice. 
+5. Create new member
+    Creates a new member and adds it to the members list so that you can use 4. to switch to the newly
+    created member.
+6. Print member info
+    Prints the current members info which includes, Their cart, the cart's total, their overall total, and if
+    they are a premium member.

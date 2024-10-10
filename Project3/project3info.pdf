@@ -1,0 +1,29 @@
+Project 1 Info:
+I learned how to Override methods, and how to design a parent class and make use of it's design for child classes.
+I had trouble because I thought the due date was sunday, and not friday, so I accidentally submitted this late.
+I did not include a UML class for LDUtil as it is something I made long before this project and it has thoroughly
+detailed commenting. 
+I did do a few extra functions for my project but those are detailed in the "BookStoreDesign" file.
+In my commenting of the project I explain the use of LDUtil functions and they have javadoc which should explain
+the functionality further.
+Project 2 Info:
+I learned how to properly utilize interfaces though they did not fit my design of the project well I still found a way to use them.
+Something that was challenging was because the Main method needs to be static the methods called within it cannot be non-static references
+to the local scope of the class in which the main method resides. So I turned my old Store.java class into an object I could instantiate
+and created a new test harness in which to instantiate the store object. The store was my test harness in the previous project and had to be
+set up this way to avoid any errors from the static references. There was probably a better way to handle this. 
+
+Another issue I had was I didn't understand what the compareTo interface was supposed to do, as in we are told to implement it 
+but we weren't told it was supposed to return a 1 for greater -1 for less than and 0 for equal but the link to the javadoc does 
+tell us this so it isn't a problem. But the biggest issue I had was what I should be doing within the implementation to actually 
+return 1, -1, or 0 and when we were shown an example in class I changed my implementation because I realized it was a mistake.
+
+I will say I was glad to find that there is a way to sort collections using compareTo as I am used to having Qsort in C++ and
+compareTo essentially allows me to do a more basic version of that. 
+
+Project 3 info:
+The only issues I really had with this project were general logistics, like the requirements asking us to make the program do something for Part A, 
+then just asking us to implement that code for part B which made me do a double take. Hopefully I didn't miss anything.
+I also dislike the way throwing errors works because I wish the code would just throw the error and stop code execution so I can debug and fix the
+error instead of the code requiring me to use a try catch or a throws decleration. 
+Other than that pretty quick and easy process. 
